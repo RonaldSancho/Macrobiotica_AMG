@@ -1583,15 +1583,38 @@ a:hover {
   flex: 0 0 calc(33.3333% - 30px); /* Tres columnas por fila con espacio */
 }
 
-/* Responsividad */
+/* Responsividad para pantallas medianas */
 @media (max-width: 991.98px) {
   .col-lg-4 {
-      flex: 0 0 calc(50% - 30px); /* Dos columnas por fila en pantallas medianas */
+    flex: 0 0 calc(50% - 30px); /* Dos columnas por fila */
   }
 }
 
+/* Responsividad para pantallas pequeñas (ajustado para 2 columnas en móviles) */
 @media (max-width: 767.98px) {
-  .col-lg-4 {
-      flex: 0 0 calc(100% - 30px); /* Una columna por fila en pantallas pequeñas */
+  .col-lg-4, .col-sm-6 {
+    flex: 0 0 calc(50% - 10px); /* Dos columnas por fila en móviles */
+    max-width: calc(50% - 10px);
+  }
+
+  .item {
+    padding: 15px; /* Reducir padding en tarjetas para móviles */
+  }
+
+  .item img {
+    margin-bottom: 10px;
+  }
+
+  .item h3 {
+    font-size: 1.2rem; /* Reducir tamaño de fuente */
+  }
+
+  .price {
+    font-size: 1rem; /* Reducir tamaño de fuente del precio */
+  }
+
+  .buy-btn {
+    font-size: 0.9rem; /* Reducir tamaño de fuente del botón */
+    padding: 6px 15px;
   }
 }
