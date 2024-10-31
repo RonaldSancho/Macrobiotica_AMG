@@ -211,21 +211,28 @@ a:hover {
 }
 
 .d-flex.align-items-center.justify-content-between {
-  padding: 0 40px; /* Define el espacio igual para ambos lados del navbar */
+  padding: 0 40px;
+  /* Define el espacio igual para ambos lados del navbar */
 }
 
 /* Navbar */
 
 .site-logo {
-  margin: 0; /* Elimina margen extra */
-  padding: 0; /* Elimina padding extra */
+  margin: 0;
+  /* Elimina margen extra */
+  padding: 0;
+  /* Elimina padding extra */
 }
 
 .site-logo a img {
-  width: 170px; /* Ajuste según necesites */
-  height: 70px; /* Ajuste según necesites */
-  display: block; /* Para evitar espacios extra como en elementos inline */
-  margin: 0; /* Elimina margen extra */
+  width: 170px;
+  /* Ajuste según necesites */
+  height: 70px;
+  /* Ajuste según necesites */
+  display: block;
+  /* Para evitar espacios extra como en elementos inline */
+  margin: 0;
+  /* Elimina margen extra */
 }
 
 .site-logo a:hover {
@@ -625,13 +632,19 @@ a:hover {
 }
 
 .site-blocks-cover .title-amg {
-  font-weight: bold; /* Ajuste del grosor */
-  text-transform: uppercase; /* Para que sea todo mayúsculas como "AMG" */
-  background-image: linear-gradient(90deg, #B8860B, #FFD700, #FFFACD, #FFD700, #B8860B); /* Gradiente dorado con brillo */
+  font-weight: bold;
+  /* Ajuste del grosor */
+  text-transform: uppercase;
+  /* Para que sea todo mayúsculas como "AMG" */
+  background-image: linear-gradient(90deg, #B8860B, #FFD700, #FFFACD, #FFD700, #B8860B);
+  /* Gradiente dorado con brillo */
   background-size: 200%;
-  -webkit-background-clip: text; /* Clip del fondo al área del texto */
-  -webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el fondo */
-  animation: shine 3s infinite linear; /* Aplicar la animación de brillo */
+  -webkit-background-clip: text;
+  /* Clip del fondo al área del texto */
+  -webkit-text-fill-color: transparent;
+  /* Hace el texto transparente para mostrar el fondo */
+  animation: shine 3s infinite linear;
+  /* Aplicar la animación de brillo */
 }
 
 /* Animación para el efecto de brillo */
@@ -639,6 +652,7 @@ a:hover {
   0% {
     background-position: 0%;
   }
+
   100% {
     background-position: 200%;
   }
@@ -1492,18 +1506,27 @@ a:hover {
 }
 
 .secondary-button {
-  color: #000; /* Color predeterminado del botón, ajústalo según lo necesites */
-  text-decoration: none; /* Eliminar subrayado si es necesario */
-  background-color: #d3b456; /* Color de fondo si lo necesitas */
-  padding: 10px 20px; /* Ajustar padding para mejorar la apariencia */
-  border-radius: 5px; /* Darle un borde redondeado si es necesario */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+  color: #000;
+  /* Color predeterminado del botón, ajústalo según lo necesites */
+  text-decoration: none;
+  /* Eliminar subrayado si es necesario */
+  background-color: #d3b456;
+  /* Color de fondo si lo necesitas */
+  padding: 10px 20px;
+  /* Ajustar padding para mejorar la apariencia */
+  border-radius: 5px;
+  /* Darle un borde redondeado si es necesario */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Transición suave */
 }
 
 .secondary-button:hover {
-  color: #d3b456; /* Cambia el color del texto al dorado cuando pase el ratón */
-  background-color: #000; /* Cambia el fondo al negro al pasar el ratón */
-  text-decoration: none; /* Asegura que no haya subrayado al pasar el ratón */
+  color: #d3b456;
+  /* Cambia el color del texto al dorado cuando pase el ratón */
+  background-color: #000;
+  /* Cambia el fondo al negro al pasar el ratón */
+  text-decoration: none;
+  /* Asegura que no haya subrayado al pasar el ratón */
 }
 
 /* Título de la sección */
@@ -1515,19 +1538,25 @@ a:hover {
 
 /* Estilos generales para la card */
 .item {
-  background-color: #ffffff; /* Blanco para fondo limpio */
+  background-color: #ffffff;
+  /* Blanco para fondo limpio */
   border-radius: 15px;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Sombra inicial suave */
-  border: 1px solid #e6e6e6; /* Borde sutil */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  /* Sombra inicial suave */
+  border: 1px solid #e6e6e6;
+  /* Borde sutil */
 }
 
 /* Efecto hover */
 .item:hover {
-  transform: translateY(-8px); /* Elevación ligera */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Sombra más profunda */
-  background-color: #f8f9fa; /* Fondo ligeramente diferente en hover */
+  transform: translateY(-8px);
+  /* Elevación ligera */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  /* Sombra más profunda */
+  background-color: #f8f9fa;
+  /* Fondo ligeramente diferente en hover */
 }
 
 /* Imagen de producto */
@@ -1541,14 +1570,16 @@ a:hover {
 }
 
 .item:hover img {
-  transform: scale(1.05); /* Zoom suave en la imagen */
+  transform: scale(1.05);
+  /* Zoom suave en la imagen */
 }
 
 /* Título del producto */
 .item h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #72a539; /* Verde principal */
+  color: #72a539;
+  /* Verde principal */
   margin-bottom: 10px;
   text-transform: capitalize;
 }
@@ -1560,13 +1591,15 @@ a:hover {
 }
 
 .item h3 a:hover {
-  color: #d3b456; /* Dorado en hover */
+  color: #d3b456;
+  /* Dorado en hover */
 }
 
 /* Precio del producto */
 .price {
   font-size: 1.2rem;
-  color: #333333; /* Negro para contraste */
+  color: #333333;
+  /* Negro para contraste */
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -1575,46 +1608,48 @@ a:hover {
 .row.gx-3 {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px; /* Espaciado entre los productos */
-  justify-content: space-between; /* Para alinear bien las columnas */
+  gap: 30px;
+  /* Espaciado entre los productos */
+  justify-content: space-between;
+  /* Para alinear bien las columnas */
 }
 
-.col-sm-6, .col-lg-4 {
-  flex: 0 0 calc(33.3333% - 30px); /* Tres columnas por fila con espacio */
+.col-sm-6,
+.col-lg-4 {
+  flex: 0 0 calc(33.3333% - 30px);
+  /* Tres columnas por fila con espacio */
 }
 
-/* Responsividad para pantallas medianas */
+/* Responsividad */
 @media (max-width: 991.98px) {
   .col-lg-4 {
-    flex: 0 0 calc(50% - 30px); /* Dos columnas por fila */
+    flex: 0 0 calc(50% - 15px); /* Dos columnas en pantallas medianas */
   }
 }
 
-/* Responsividad para pantallas pequeñas (ajustado para 2 columnas en móviles) */
 @media (max-width: 767.98px) {
-  .col-lg-4, .col-sm-6 {
-    flex: 0 0 calc(50% - 10px); /* Dos columnas por fila en móviles */
-    max-width: calc(50% - 10px);
+  .col-sm-6, .col-lg-4 {
+    flex: 0 0 calc(50% - 10px); /* Dos columnas en pantallas pequeñas */
   }
-
+  
+  .row.gx-3 {
+    padding: 0 15px; /* Espacio en los bordes izquierdo y derecho solo en móviles */
+    gap: 15px; /* Espacio entre productos */
+  }
   .item {
-    padding: 15px; /* Reducir padding en tarjetas para móviles */
+    padding: 10px; /* Reducir padding interno */
   }
 
   .item img {
-    margin-bottom: 10px;
+    max-width: 90%; /* Ajustar el tamaño de la imagen */
+    border-radius: 8px; /* Opcional: reducir el borde redondeado */
   }
 
   .item h3 {
-    font-size: 1.2rem; /* Reducir tamaño de fuente */
+    font-size: 1.2rem; /* Reducir el tamaño de la fuente */
   }
 
   .price {
-    font-size: 1rem; /* Reducir tamaño de fuente del precio */
-  }
-
-  .buy-btn {
-    font-size: 0.9rem; /* Reducir tamaño de fuente del botón */
-    padding: 6px 15px;
+    font-size: 1rem; /* Reducir el tamaño del precio */
   }
 }
