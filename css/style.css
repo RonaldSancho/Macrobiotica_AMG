@@ -1116,62 +1116,10 @@ a:hover {
   right: -5px;
 }
 
-.search-wrap {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: .5s all ease;
-  -o-transition: .5s all ease;
-  transition: .5s all ease;
-}
-
-.search-wrap .container {
-  position: relative;
-  height: 100%;
-}
-
-.search-wrap.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.search-wrap .form-control {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  border: none;
-  z-index: 3;
-  font-size: 20px;
-}
-
 @media (max-width: 991.98px) {
   .search-wrap .form-control {
     font-size: 20px;
   }
-}
-
-.search-wrap .search-close {
-  z-index: 4;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.search-wrap .search-close span {
-  font-size: 30px;
 }
 
 .title-section h2 {
@@ -1454,14 +1402,6 @@ a:hover {
   font-size: 1.2rem;
 }
 
-.testimony blockquote p {
-  color: #000;
-  font-family: "Crimson Text", serif;
-  font-size: 1.3rem;
-  line-height: 1.5;
-  font-style: italic;
-}
-
 .bg-image {
   background-size: cover;
   position: relative;
@@ -1474,7 +1414,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(81, 234, 234, 0.9);
+  background: rgba(100, 200, 200, 0.9); 
   z-index: 1;
 }
 
@@ -1652,4 +1592,22 @@ a:hover {
   .price {
     font-size: 1rem; /* Reducir el tamaño del precio */
   }
+}
+
+/* Estilos para el botón "Ver todos los productos" */
+.btn-products {
+  background-color: #72a539; /* Verde principal */
+  color: #ffffff; /* Texto blanco para contraste */
+  border: 2px; /* Borde dorado */
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-products:hover {
+  background-color: #d3b456; /* Cambia a dorado en hover */
+  color: #333333; /* Texto oscuro en hover */
+  transform: scale(1.05); /* Ligeramente más grande */
+  border-color: #72a539; /* Borde verde en hover */
 }
