@@ -1237,15 +1237,6 @@ a:hover {
   color: #000;
 }
 
-/* .item-entry .item-price {
-  color: #000;
-  font-weight: normal;
-}
-
-.item-entry .item-price del {
-  color: #b3b3b3;
-} */
-
 .custom-border-bottom {
   border-bottom: 1px solid #f9f9f9;
 }
@@ -1282,22 +1273,6 @@ a:hover {
   font-size: 1rem;
 }
 
-/* .featured-hero-product .price {
-  font-size: 2rem;
-  color: #000;
-}
-
-@media (max-width: 991.98px) {
-  .featured-hero-product .price {
-    font-size: 1.5rem;
-  }
-}
-
-.featured-hero-product .price del {
-  margin-left: 10px;
-  color: #6c757d;
-} */
-
 .border {
   border: 1px solid #eee !important;
 }
@@ -1308,10 +1283,6 @@ a:hover {
 }
 
 .item h3 a {
-  color: #000;
-}
-
-.item .price {
   color: #000;
 }
 
@@ -1535,13 +1506,21 @@ a:hover {
   /* Dorado en hover */
 }
 
-/* Precio del producto */
 .price {
-  font-size: 1.2rem;
-  color: #333333;
-  /* Negro para contraste */
+  font-size: 1.4rem;
+  color: #4e791d;
   font-weight: 500;
   margin-bottom: 15px;
+}
+
+.price sup {
+  font-size: 0.8rem; /* Tamaño más pequeño para los decimales */
+  vertical-align: super;
+}
+
+.price::before {
+  content: "₡ ";
+  font-size: 1.3rem; /* Tamaño ligeramente menor para el símbolo */
 }
 
 /* Estructura de las filas y columnas */
@@ -1590,7 +1569,7 @@ a:hover {
   }
 
   .price {
-    font-size: 1rem; /* Reducir el tamaño del precio */
+    font-size: 1.2rem; /* Reducir el tamaño del precio */
   }
 }
 
