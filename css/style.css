@@ -1527,34 +1527,36 @@ a:hover {
 .row.gx-3 {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  /* Espaciado entre los productos */
-  justify-content: space-between;
-  /* Para alinear bien las columnas */
+  gap: 30px; /* Espaciado entre los productos */
+  justify-content: flex-start; /* Alinea los productos al inicio sin dejar espacio entre ellos */
 }
 
 .col-sm-6,
 .col-lg-4 {
-  flex: 0 0 calc(33.3333% - 30px);
-  /* Tres columnas por fila con espacio */
+  flex: 0 0 calc(33.3333% - 30px); /* Tres columnas por fila con espacio */
+  max-width: calc(33.3333% - 30px); /* Asegura el ancho máximo para mantener tres columnas */
 }
+
 
 /* Responsividad */
 @media (max-width: 991.98px) {
   .col-lg-4 {
     flex: 0 0 calc(50% - 15px); /* Dos columnas en pantallas medianas */
+    max-width: calc(50% - 15px);
   }
 }
 
 @media (max-width: 767.98px) {
   .col-sm-6, .col-lg-4 {
     flex: 0 0 calc(50% - 10px); /* Dos columnas en pantallas pequeñas */
+    max-width: calc(50% - 10px);
   }
   
   .row.gx-3 {
     padding: 0 15px; /* Espacio en los bordes izquierdo y derecho solo en móviles */
     gap: 15px; /* Espacio entre productos */
   }
+  
   .item {
     padding: 10px; /* Reducir padding interno */
   }
@@ -1572,6 +1574,7 @@ a:hover {
     font-size: 1.2rem; /* Reducir el tamaño del precio */
   }
 }
+
 
 /* Estilos para el botón "Ver todos los productos" */
 .btn-products {
