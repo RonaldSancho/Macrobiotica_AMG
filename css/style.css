@@ -132,14 +132,6 @@ a:hover {
   /* Efecto flotante */
 }
 
-.item h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #333333;
-}
-
 .card-title {
   font-weight: bold;
   font-size: 1.5em;
@@ -864,10 +856,6 @@ a:hover {
   border-left: none !important;
 }
 
-.block-3 .product .item {
-  border: 1px solid #eee;
-}
-
 .block-4 {
   -webkit-box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.1);
@@ -1287,24 +1275,6 @@ a:hover {
   position: absolute;
 }
 
-.item-entry .product-item {
-  margin-bottom: 30px;
-}
-
-.item-entry .item-title {
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 0;
-}
-
-.item-entry .item-title a {
-  color: gray;
-}
-
-.item-entry .item-title a:hover {
-  color: #000;
-}
-
 .custom-border-bottom {
   border-bottom: 1px solid #f9f9f9;
 }
@@ -1348,10 +1318,6 @@ a:hover {
 .border a {
   display: block;
   padding: 30px;
-}
-
-.item h3 a {
-  color: #000;
 }
 
 .tag {
@@ -1510,31 +1476,31 @@ a:hover {
 
 /* Estilos generales para la card */
 .item {
-  background-color: #ffffff;
-  /* Blanco para fondo limpio */
+  background-color: #ffffff; /* Fondo blanco */
   border-radius: 15px;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
-  /* Sombra inicial suave */
-  border: 1px solid #e6e6e6;
-  /* Borde sutil */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08); /* Sombra inicial suave */
+  border: 1px solid #e6e6e6; /* Borde sutil */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; /* Hace que cada card tenga la misma altura */
+  min-height: 380px; /* Altura mínima para que haya más espacio para la imagen y el texto */
 }
 
 /* Efecto hover */
 .item:hover {
-  transform: translateY(-8px);
-  /* Elevación ligera */
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-  /* Sombra más profunda */
-  background-color: #f8f9fa;
-  /* Fondo ligeramente diferente en hover */
+  transform: translateY(-8px); /* Elevación ligera */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Sombra más profunda */
+  background-color: #f8f9fa; /* Fondo ligeramente diferente en hover */
 }
 
 /* Imagen de producto */
 .item img {
   max-width: 100%;
-  height: auto;
+  height: 300px; /* Aumenta la altura de la imagen para hacerla más grande */
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 15px;
@@ -1542,18 +1508,18 @@ a:hover {
 }
 
 .item:hover img {
-  transform: scale(1.05);
-  /* Zoom suave en la imagen */
+  transform: scale(1.05); /* Zoom suave en la imagen */
 }
 
 /* Título del producto */
 .item h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  color: #72a539;
-  /* Verde principal */
+  color: #72a539; /* Verde principal */
   margin-bottom: 10px;
   text-transform: capitalize;
+  min-height: 60px; /* Asegura espacio suficiente para el título sin corte */
+  text-align: center;
 }
 
 .item h3 a {
@@ -1563,95 +1529,80 @@ a:hover {
 }
 
 .item h3 a:hover {
-  color: #d3b456;
-  /* Dorado en hover */
+  color: #d3b456; /* Dorado en hover */
 }
 
+/* Precio */
 .price {
   font-size: 1.4rem;
   color: #4e791d;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-top: auto; /* Coloca el precio al final de la card */
 }
 
 .price sup {
-  font-size: 0.8rem;
-  /* Tamaño más pequeño para los decimales */
+  font-size: 0.8rem; /* Tamaño más pequeño para los decimales */
   vertical-align: super;
 }
 
 .price::before {
   content: "₡ ";
-  font-size: 1.3rem;
-  /* Tamaño ligeramente menor para el símbolo */
+  font-size: 1.3rem; /* Tamaño ligeramente menor para el símbolo */
 }
 
 /* Estructura de las filas y columnas */
 .row.gx-3 {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  /* Espaciado entre los productos */
-  justify-content: flex-start;
-  /* Alinea los productos al inicio sin dejar espacio entre ellos */
+  gap: 30px; /* Espaciado entre los productos */
+  justify-content: flex-start; /* Alinea los productos al inicio sin dejar espacio entre ellos */
 }
 
 .col-sm-6,
 .col-lg-4 {
-  flex: 0 0 calc(33.3333% - 30px);
-  /* Tres columnas por fila con espacio */
-  max-width: calc(33.3333% - 30px);
-  /* Asegura el ancho máximo para mantener tres columnas */
+  flex: 0 0 calc(33.3333% - 30px); /* Tres columnas por fila con espacio */
+  max-width: calc(33.3333% - 30px); /* Asegura el ancho máximo para mantener tres columnas */
 }
-
 
 /* Responsividad */
 @media (max-width: 991.98px) {
   .col-lg-4 {
-    flex: 0 0 calc(50% - 15px);
-    /* Dos columnas en pantallas medianas */
+    flex: 0 0 calc(50% - 15px); /* Dos columnas en pantallas medianas */
     max-width: calc(50% - 15px);
   }
 }
 
 @media (max-width: 767.98px) {
-
   .col-sm-6,
   .col-lg-4 {
-    flex: 0 0 calc(50% - 10px);
-    /* Dos columnas en pantallas pequeñas */
+    flex: 0 0 calc(50% - 10px); /* Dos columnas en pantallas pequeñas */
     max-width: calc(50% - 10px);
   }
 
   .row.gx-3 {
-    padding: 0 15px;
-    /* Espacio en los bordes izquierdo y derecho solo en móviles */
-    gap: 15px;
-    /* Espacio entre productos */
+    padding: 0 15px; /* Espacio en los bordes izquierdo y derecho solo en móviles */
+    gap: 15px; /* Espacio entre productos */
   }
 
   .item {
-    padding: 10px;
-    /* Reducir padding interno */
+    padding: 10px; /* Reducir padding interno */
+    min-height: 400px; /* Aumenta la altura en dispositivos pequeños */
   }
 
   .item img {
-    max-width: 90%;
-    /* Ajustar el tamaño de la imagen */
-    border-radius: 8px;
-    /* Opcional: reducir el borde redondeado */
+    height: 160px; /* Ajusta la altura en pantallas pequeñas */
+    border-radius: 8px; /* Opcional: reducir el borde redondeado */
   }
 
   .item h3 {
-    font-size: 1.2rem;
-    /* Reducir el tamaño de la fuente */
+    font-size: 1.2rem; /* Reducir el tamaño de la fuente */
   }
 
   .price {
-    font-size: 1.2rem;
-    /* Reducir el tamaño del precio */
+    font-size: 1.2rem; /* Reducir el tamaño del precio */
   }
 }
+
 
 
 /* Estilos para el botón "Ver todos los productos" */
