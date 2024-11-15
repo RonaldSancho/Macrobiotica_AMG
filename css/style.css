@@ -1586,7 +1586,7 @@ a:hover {
 
   .item {
     padding: 10px; /* Reducir padding interno */
-    min-height: 350px; /* Aumenta la altura en dispositivos pequeños */
+    min-height: 330px; /* Aumenta la altura en dispositivos pequeños */
   }
 
   .item img {
