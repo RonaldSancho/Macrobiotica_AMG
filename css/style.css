@@ -1417,27 +1417,17 @@ a:hover {
 }
 
 .secondary-button {
-  color: #000;
-  /* Color predeterminado del botón, ajústalo según lo necesites */
-  text-decoration: none;
-  /* Eliminar subrayado si es necesario */
-  background-color: #d3b456;
-  /* Color de fondo si lo necesitas */
+  background-color: #72a539;
+  color: #ffffff;
   padding: 10px 20px;
-  /* Ajustar padding para mejorar la apariencia */
   border-radius: 5px;
-  /* Darle un borde redondeado si es necesario */
   transition: background-color 0.3s ease, color 0.3s ease;
-  /* Transición suave */
 }
 
 .secondary-button:hover {
-  color: #d3b456;
-  /* Cambia el color del texto al dorado cuando pase el ratón */
-  background-color: #000;
-  /* Cambia el fondo al negro al pasar el ratón */
-  text-decoration: none;
-  /* Asegura que no haya subrayado al pasar el ratón */
+  background-color: #d3b456; /* Cambia a dorado en hover */
+  color: #333333; /* Texto oscuro en hover */
+  border-color: #72a539; /* Borde verde en hover */
 }
 
 /* Título de la sección */
@@ -1591,5 +1581,22 @@ a:hover {
   background-color: #d3b456; /* Cambia a dorado en hover */
   color: #333333; /* Texto oscuro en hover */
   transform: scale(1.05); /* Ligeramente más grande */
+  border-color: #72a539; /* Borde verde en hover */
+}
+
+/* Estilos para el botón "Ver todos los productos" */
+.btn-references {
+  background-color: #72a539; /* Verde principal */
+  color: #ffffff; /* Texto blanco para contraste */
+  border: 2px; /* Borde dorado */
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-references:hover {
+  background-color: #d3b456; /* Cambia a dorado en hover */
+  color: #333333; /* Texto oscuro en hover */
   border-color: #72a539; /* Borde verde en hover */
 }

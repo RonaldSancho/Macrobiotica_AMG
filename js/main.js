@@ -36,6 +36,21 @@ jQuery(document).ready(function($) {
 	const itemsPerPage = 8;
 	let currentPage = localStorage.getItem('currentPage') ? parseInt(localStorage.getItem('currentPage')) : 1;
 
+    // Función para ordenar productos
+	function sortProducts(criteria) {
+		if (criteria === 'name-asc') {
+			products.sort((a, b) => a.name.localeCompare(b.name));
+		} else if (criteria === 'name-desc') {
+			products.sort((a, b) => b.name.localeCompare(a.name));
+		} else if (criteria === 'price-asc') {
+			products.sort((a, b) => parseFloat(a.price.replace(",", "")) - parseFloat(b.price.replace(",", "")));
+		} else if (criteria === 'price-desc') {
+			products.sort((a, b) => parseFloat(b.price.replace(",", "")) - parseFloat(a.price.replace(",", "")));
+		}
+		currentPage = 1; // Resetear a la primera página después de ordenar
+		renderProducts();
+	}
+
 	function renderProducts() {
 		const productContainer = $("#product-container");
 		productContainer.html(""); // Limpia los productos actuales
@@ -99,6 +114,21 @@ jQuery(document).ready(function($) {
 			paginationContainer.append(nextPage);
 		}
 	}
+
+    	// Evento para los botones de filtro
+	$('#dropdownMenuReference').siblings('.dropdown-menu').on('click', '.dropdown-item', function(e) {
+		e.preventDefault();
+		const sortCriteria = $(this).text();
+		if (sortCriteria === "Nombre, A a Z") {
+			sortProducts('name-asc');
+		} else if (sortCriteria === "Nombre, Z a A") {
+			sortProducts('name-desc');
+		} else if (sortCriteria === "Precio, de menor a mayor") {
+			sortProducts('price-asc');
+		} else if (sortCriteria === "Precio, de mayor a menor") {
+			sortProducts('price-desc');
+		}
+	});
 	
 	// Desplaza hacia arriba cuando se recarga la página
 	$(document).ready(function() {
