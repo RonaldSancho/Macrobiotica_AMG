@@ -4,6 +4,7 @@ body {
   color: #8c92a0;
   font-weight: 300;
   font-size: 16px;
+  font-family: Arial, sans-serif;
 }
 
 ::-moz-selection {
@@ -113,11 +114,30 @@ a:hover {
   padding: 60px 0;
 }
 
+.title-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 .card {
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  height: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  /* Efecto flotante */
+}
+
+.item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #333333;
 }
 
 .card-title {
@@ -279,12 +299,12 @@ a:hover {
 }
 
 .site-navbar {
-  margin-bottom: 0px;
-  z-index: 1999;
-  position: relative;
+  position: sticky;
   top: 0;
-  width: 100%;
-  background: #fff;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra para mayor contraste */
 }
 
 .site-navbar.position-relative {
@@ -327,45 +347,77 @@ a:hover {
   border-bottom: 1px solid #f3f3f4 !important;
 }
 
+/* Estilo base para el menú */
 .site-navbar .site-navigation .site-menu {
   margin-left: 0;
   padding-left: 0;
   margin-bottom: 0;
 }
 
+/* Estilo del estado activo */
 .site-navbar .site-navigation .site-menu .active>a {
-  color: #000;
+  color: #4CAF50;
+  /* Color de acento */
   position: relative;
 }
 
 .site-navbar .site-navigation .site-menu .active>a:before {
   content: "";
   position: absolute;
-  left: 10px;
-  right: 10px;
+  left: 15px;
+  /* Ajusta la posición de la línea bajo el texto */
+  right: 15px;
   height: 2px;
-  background: #000;
-  bottom: 0;
+  background: #4CAF50;
+  /* Color de la línea */
+  bottom: -3px;
+  /* Ajusta la distancia bajo el texto */
+  transition: all 0.3s ease;
+  /* Transición suave */
 }
 
+/* Estilo de los enlaces del menú */
 .site-navbar .site-navigation .site-menu a {
   text-decoration: none !important;
   font-size: 15px;
   display: inline-block;
+  color: #333333;
+  /* Color predeterminado */
+  transition: color 0.3s ease;
+  /* Suaviza el cambio de color */
 }
 
+.site-navbar .site-navigation .site-menu a:hover {
+  color: #4CAF50;
+  /* Cambia el color al pasar el ratón */
+}
+
+/* Elementos del menú */
 .site-navbar .site-navigation .site-menu>li {
   display: inline-block;
-  padding: 10px 5px;
+  padding: 0 15px;
+  /* Espaciado entre elementos */
 }
 
 .site-navbar .site-navigation .site-menu>li>a {
-  padding: 10px 10px;
+  padding: 12px 15px;
+  /* Aumenta el área clicable */
   text-transform: uppercase;
-  letter-spacing: .05em;
-  color: #25262a;
+  letter-spacing: 0.05em;
   font-size: 17px;
-  text-decoration: none !important;
+}
+
+/* Estilo para el contenedor del menú */
+.site-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Transición general para suavidad */
+.site-navbar .site-navigation .site-menu a,
+.site-navbar .site-navigation .site-menu .active>a:before {
+  transition: color 0.3s ease, background 0.3s ease, left 0.3s ease, right 0.3s ease;
 }
 
 .site-mobile-menu {
@@ -374,21 +426,14 @@ a:hover {
   right: 0;
   z-index: 2000;
   padding-top: 20px;
-  background: #fff;
+  background: #ffffff;
   height: calc(100vh);
-  -webkit-transform: translateX(110%);
-  -ms-transform: translateX(110%);
   transform: translateX(110%);
-  -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
-  box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
-  -webkit-transition: .3s all ease-in-out;
-  -o-transition: .3s all ease-in-out;
-  transition: .3s all ease-in-out;
+  box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease-in-out;
 }
 
 .offcanvas-menu .site-mobile-menu {
-  -webkit-transform: translateX(0%);
-  -ms-transform: translateX(0%);
   transform: translateX(0%);
 }
 
@@ -406,19 +451,16 @@ a:hover {
 }
 
 .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span {
-  font-size: 40px;
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  line-height: 1;
-  cursor: pointer;
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
+  font-size: 32px;
+  color: #212529;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span:hover {
-  color: #25262a;
+  color: #fff;
 }
 
 .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo {
@@ -457,14 +499,17 @@ a:hover {
 }
 
 .site-mobile-menu .site-nav-wrap a {
-  padding: 10px 20px;
+  color: #333333;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px 20px;
   display: block;
-  position: relative;
-  color: #212529;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .site-mobile-menu .site-nav-wrap a:hover {
-  color: #d3b456;
+  color: #4CAF50;
 }
 
 .site-mobile-menu .site-nav-wrap li {
@@ -473,23 +518,18 @@ a:hover {
 }
 
 .site-mobile-menu .site-nav-wrap li.active>a {
-  color: #d3b456;
+  color: #4CAF50;
 }
 
 .site-mobile-menu .site-nav-wrap .arrow-collapse {
-  position: absolute;
-  right: 0px;
-  top: 10px;
-  z-index: 20;
-  width: 36px;
-  height: 36px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 50%;
+  background: #eaeaea;
+  color: #212529;
+  border: 1px solid #d3b456;
 }
 
 .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
-  background: #f8f9fa;
+  background: #d3b456;
+  color: #fff;
 }
 
 .site-mobile-menu .site-nav-wrap .arrow-collapse:before {
@@ -526,10 +566,8 @@ a:hover {
   font-size: 20px;
 }
 
-.site-mobile-menu .site-nav-wrap>li>ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.site-mobile-menu .site-nav-wrap > li > ul {
+  background: #f1f1f1;
 }
 
 .site-mobile-menu .site-nav-wrap>li>ul>li {
@@ -990,10 +1028,40 @@ a:hover {
   padding-left: 25px;
 }
 
-.site-block-27 ul,
-.site-block-27 ul li {
+.pagination-container {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.pagination {
+  list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.page-item {
+  display: inline-block;
+}
+
+.page-item a,
+.page-item span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  color: #4CAF50; /* Verde de acento */
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 50%; /* Botones redondos */
+  transition: all 0.3s ease;
+}
+
+.pagination-container .pagination .page-item:not(.active) a {
+  background-color: #f9f9f9;
 }
 
 .site-block-27 ul li {
@@ -1385,7 +1453,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(100, 200, 200, 0.9); 
+  background: rgba(114, 165, 57, 0.85);
   z-index: 1;
 }
 
@@ -1425,9 +1493,12 @@ a:hover {
 }
 
 .secondary-button:hover {
-  background-color: #d3b456; /* Cambia a dorado en hover */
-  color: #333333; /* Texto oscuro en hover */
-  border-color: #72a539; /* Borde verde en hover */
+  background-color: #d3b456;
+  /* Cambia a dorado en hover */
+  color: #333333;
+  /* Texto oscuro en hover */
+  border-color: #72a539;
+  /* Borde verde en hover */
 }
 
 /* Título de la sección */
@@ -1504,73 +1575,93 @@ a:hover {
 }
 
 .price sup {
-  font-size: 0.8rem; /* Tamaño más pequeño para los decimales */
+  font-size: 0.8rem;
+  /* Tamaño más pequeño para los decimales */
   vertical-align: super;
 }
 
 .price::before {
   content: "₡ ";
-  font-size: 1.3rem; /* Tamaño ligeramente menor para el símbolo */
+  font-size: 1.3rem;
+  /* Tamaño ligeramente menor para el símbolo */
 }
 
 /* Estructura de las filas y columnas */
 .row.gx-3 {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px; /* Espaciado entre los productos */
-  justify-content: flex-start; /* Alinea los productos al inicio sin dejar espacio entre ellos */
+  gap: 30px;
+  /* Espaciado entre los productos */
+  justify-content: flex-start;
+  /* Alinea los productos al inicio sin dejar espacio entre ellos */
 }
 
 .col-sm-6,
 .col-lg-4 {
-  flex: 0 0 calc(33.3333% - 30px); /* Tres columnas por fila con espacio */
-  max-width: calc(33.3333% - 30px); /* Asegura el ancho máximo para mantener tres columnas */
+  flex: 0 0 calc(33.3333% - 30px);
+  /* Tres columnas por fila con espacio */
+  max-width: calc(33.3333% - 30px);
+  /* Asegura el ancho máximo para mantener tres columnas */
 }
 
 
 /* Responsividad */
 @media (max-width: 991.98px) {
   .col-lg-4 {
-    flex: 0 0 calc(50% - 15px); /* Dos columnas en pantallas medianas */
+    flex: 0 0 calc(50% - 15px);
+    /* Dos columnas en pantallas medianas */
     max-width: calc(50% - 15px);
   }
 }
 
 @media (max-width: 767.98px) {
-  .col-sm-6, .col-lg-4 {
-    flex: 0 0 calc(50% - 10px); /* Dos columnas en pantallas pequeñas */
+
+  .col-sm-6,
+  .col-lg-4 {
+    flex: 0 0 calc(50% - 10px);
+    /* Dos columnas en pantallas pequeñas */
     max-width: calc(50% - 10px);
   }
-  
+
   .row.gx-3 {
-    padding: 0 15px; /* Espacio en los bordes izquierdo y derecho solo en móviles */
-    gap: 15px; /* Espacio entre productos */
+    padding: 0 15px;
+    /* Espacio en los bordes izquierdo y derecho solo en móviles */
+    gap: 15px;
+    /* Espacio entre productos */
   }
-  
+
   .item {
-    padding: 10px; /* Reducir padding interno */
+    padding: 10px;
+    /* Reducir padding interno */
   }
 
   .item img {
-    max-width: 90%; /* Ajustar el tamaño de la imagen */
-    border-radius: 8px; /* Opcional: reducir el borde redondeado */
+    max-width: 90%;
+    /* Ajustar el tamaño de la imagen */
+    border-radius: 8px;
+    /* Opcional: reducir el borde redondeado */
   }
 
   .item h3 {
-    font-size: 1.2rem; /* Reducir el tamaño de la fuente */
+    font-size: 1.2rem;
+    /* Reducir el tamaño de la fuente */
   }
 
   .price {
-    font-size: 1.2rem; /* Reducir el tamaño del precio */
+    font-size: 1.2rem;
+    /* Reducir el tamaño del precio */
   }
 }
 
 
 /* Estilos para el botón "Ver todos los productos" */
 .btn-products {
-  background-color: #72a539; /* Verde principal */
-  color: #ffffff; /* Texto blanco para contraste */
-  border: 2px; /* Borde dorado */
+  background-color: #72a539;
+  /* Verde principal */
+  color: #ffffff;
+  /* Texto blanco para contraste */
+  border: 2px;
+  /* Borde dorado */
   border-radius: 8px;
   font-size: 1.1rem;
   text-decoration: none;
@@ -1578,17 +1669,24 @@ a:hover {
 }
 
 .btn-products:hover {
-  background-color: #d3b456; /* Cambia a dorado en hover */
-  color: #333333; /* Texto oscuro en hover */
-  transform: scale(1.05); /* Ligeramente más grande */
-  border-color: #72a539; /* Borde verde en hover */
+  background-color: #d3b456;
+  /* Cambia a dorado en hover */
+  color: #333333;
+  /* Texto oscuro en hover */
+  transform: scale(1.05);
+  /* Ligeramente más grande */
+  border-color: #72a539;
+  /* Borde verde en hover */
 }
 
 /* Estilos para el botón "Ver todos los productos" */
 .btn-references {
-  background-color: #72a539; /* Verde principal */
-  color: #ffffff; /* Texto blanco para contraste */
-  border: 2px; /* Borde dorado */
+  background-color: #72a539;
+  /* Verde principal */
+  color: #ffffff;
+  /* Texto blanco para contraste */
+  border: 2px;
+  /* Borde dorado */
   border-radius: 8px;
   font-size: 1.1rem;
   text-decoration: none;
@@ -1596,7 +1694,45 @@ a:hover {
 }
 
 .btn-references:hover {
-  background-color: #d3b456; /* Cambia a dorado en hover */
-  color: #333333; /* Texto oscuro en hover */
-  border-color: #72a539; /* Borde verde en hover */
+  background-color: #d3b456;
+  /* Cambia a dorado en hover */
+  color: #333333;
+  /* Texto oscuro en hover */
+  border-color: #72a539;
+  /* Borde verde en hover */
+}
+
+.breadcrumb-container {
+  background-color: #f8f9fa; /* Fondo claro */
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd; /* Línea sutil en la parte inferior */
+}
+
+.breadcrumb-link {
+  color: #6c757d; /* Color gris para enlaces */
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #4CAF50; /* Color de acento para hover en enlaces */
+}
+
+.breadcrumb-separator {
+  color: #999; /* Color gris claro para el separador */
+  font-size: 0.9rem;
+}
+
+.breadcrumb-current {
+  color: #000; /* Negro para destacar la sección actual */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.breadcrumb-container .col-md-12 {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif; /* Fuente profesional */
 }
