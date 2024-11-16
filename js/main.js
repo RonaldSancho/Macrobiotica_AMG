@@ -7,31 +7,31 @@ AOS.init({
 jQuery(document).ready(function($) {
     "use strict";
 
-	const products = [
-		{ img: "images/CITRATO_POTASIO.png", name: "Citrato de Potasio y vitamina B12", price: "3,663.00" },
-		{ img: "images/BIOTINA.png", name: "Biotina con ácido hialurónico, vitamina E y C", price: "5,235.00" },
-		{ img: "images/CITRATO_MAGNESIO.png", name: "Citrato de Magnesio en polvo", price: "6,892.00" },
-		{ img: "images/GEL_SABILA.png", name: "Gel de sabila", price: "4,201.00" },
-		{ img: "images/CITRATO_MAGNESIO_CAPS.png", name: "Citrato de Magnesio en cápsulas", price: "4,949.00" },
-		{ img: "images/COLAGENO_VC.png", name: "Colágeno con vitamina C", price: "4,959.00" },
-		{ img: "images/COMPLEJO_B.png", name: "Complejo B con vitaminas + B12", price: "5,087.00" },
-		{ img: "images/EPALI-NAT.png", name: "EPALI-NAT (Hepático 100% natural)", price: "6,312.00" },
-		{ img: "images/FIT-ES-NAT.png", name: "FIT-ES-NAT (100% natural)", price: "6,115.00" },
-		{ img: "images/OMEGA_369.png", name: "Omega 3, 6, 9 (100% natural)", price: "4,368.00" },
-		{ img: "images/HART-HAID.png", name: " Hart-Haid (Glucosamina - Condroitina - Msm y Colageno)", price: "7,935.00" },
-		{ img: "images/JARABE.png", name: "Jarabe con Vitamina C y Extracto de Bambú", price: "4,779.00" },
-		{ img: "images/JUGO_CONCENTRADO.png", name: "Jugo Concentrado", price: "6,326.00" },
-		{ img: "images/MELATONINA.png", name: "Melatonina + Vitamina B6", price: " 4,031.00" },
-		{ img: "images/MORINGA.png", name: "Moringa", price: "4,850.00" },
-		{ img: "images/OMEGA_3.png", name: "Omega 3 (100 Softgels)", price: "4,368.00" },
-		{ img: "images/ALGAS_SPIRULINA.png", name: "Spirulina", price: "4,639.00" },
-		{ img: "images/VITAMINA_D3.png", name: "Vitamina D3", price: "4,378.00" },
-		{ img: "images/SUP-CO-CLE.png", name: "SUP-CO-CLE (Limpiador del colon)", price: "6,515.00" },
-		{ img: "images/TE_CHINO.png", name: "Té de Bambú", price: "2,451.00" },
-		{ img: "images/GINGER_DRINK.png", name: "Té de Jengibre", price: "2,801.00" },
-		{ img: "images/URI-GO-NAT.png", name: "URI-GO-NAT (Urico y gota natural)", price: "5,878.00" },
-		{ img: "images/VITAGOMITAS.png", name: "Vitagomitas", price: "4,368.00" }
-	];
+    const products = [
+        { img: "images/CITRATO_POTASIO.png", name: "Citrato Potasio y Vitamina B12", price: "3,663.00" },
+        { img: "images/BIOTINA.png", name: "Biotina, Ácido Hialurónico + Vitamina E y C", price: "5,235.00" },
+        { img: "images/CITRATO_MAGNESIO.png", name: "Citrato de Magnesio Polvo", price: "6,892.00" },
+        { img: "images/GEL_SABILA.png", name: "Gel de Sábila Natural", price: "4,201.00" },
+        { img: "images/CITRATO_MAGNESIO_CAPS.png", name: "Citrato de Magnesio Cápsulas", price: "4,949.00" },
+        { img: "images/COLAGENO_VC.png", name: "Colágeno Hidrolizado con Vitamina C", price: "4,959.00" },
+        { img: "images/COMPLEJO_B.png", name: "Complejo B + Vitamina B12", price: "5,087.00" },
+        { img: "images/EPALI-NAT.png", name: "EPALI-NAT: Protector Hepático Natural", price: "6,312.00" },
+        { img: "images/FIT-ES-NAT.png", name: "FIT-ES-NAT Suplemento Natural", price: "6,115.00" },
+        { img: "images/OMEGA_369.png", name: "Omega 3, 6 y 9 Natural", price: "4,368.00" },
+        { img: "images/HART-HAID.png", name: "Hart-Haid Glucosamina + Colágeno", price: "7,935.00" },
+        { img: "images/JARABE.png", name: "Jarabe con Vitamina C + Bambú", price: "4,779.00" },
+        { img: "images/JUGO_CONCENTRADO.png", name: "Jugo Concentrado Nutritivo", price: "6,326.00" },
+        { img: "images/MELATONINA.png", name: "Melatonina + Vitamina B6", price: "4,031.00" },
+        { img: "images/MORINGA.png", name: "Suplemento de Moringa Natural", price: "4,850.00" },
+        { img: "images/OMEGA_3.png", name: "Omega 3: 100 Softgels", price: "4,368.00" },
+        { img: "images/ALGAS_SPIRULINA.png", name: "Spirulina: Alga Nutritiva", price: "4,639.00" },
+        { img: "images/VITAMINA_D3.png", name: "Vitamina D3 Suplemento Diario", price: "4,378.00" },
+        { img: "images/SUP-CO-CLE.png", name: "SUP-CO-CLE Limpiador de Colon", price: "6,515.00" },
+        { img: "images/TE_CHINO.png", name: "Té Chino de Bambú", price: "2,451.00" },
+        { img: "images/GINGER_DRINK.png", name: "Té de Jengibre Saludable", price: "2,801.00" },
+        { img: "images/URI-GO-NAT.png", name: "URI-GO-NAT: Uricemia Natural", price: "5,878.00" },
+        { img: "images/VITAGOMITAS.png", name: "Vitagomitas: Vitaminas Naturales", price: "4,368.00" }
+    ];    
 	
 	const itemsPerPage = 8;
 	let currentPage = localStorage.getItem('currentPage') ? parseInt(localStorage.getItem('currentPage')) : 1;
