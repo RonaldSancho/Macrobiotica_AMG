@@ -7,6 +7,19 @@ AOS.init({
 jQuery(document).ready(function($) {
     "use strict";
 
+    // Obtiene el título del producto desde el DOM
+    const productTitle = $(".product-title").text().trim();
+
+    // URL de WhatsApp con el mensaje dinámico
+    const whatsappBaseUrl = "https://wa.me/50683167432"; // Número de WhatsApp con código de país (506 para Costa Rica)
+    const message = `Quiero más información sobre ${productTitle}`;
+
+    // Construye la URL final
+    const whatsappUrl = `${whatsappBaseUrl}?text=${encodeURIComponent(message)}`;
+
+    // Asigna la URL al botón
+    $("#whatsapp-button").attr("href", whatsappUrl);
+
     const products = [
         { img: "images/CITRATO_POTASIO.png", name: "Citrato Potasio y Vitamina B12", price: "3,663.00" },
         { img: "images/BIOTINA.png", name: "Biotina, Ácido Hialurónico + Vitamina E y C", price: "5,235.00" },
