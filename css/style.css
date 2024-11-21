@@ -1811,3 +1811,15 @@ a:hover {
     object-fit: contain; /* Asegura que no se recorte en dispositivos pequeños */
   }
 }
+
+.icon-leaf:before {
+  color: #4CAF50;
+}
+
+.icon-users:before {
+  color: #4CAF50;
+}
+
+.icon-help:before {
+  color: #4CAF50;
+}
