@@ -432,7 +432,7 @@ jQuery(document).ready(function ($) {
     }
 
     // Configura el botón de WhatsApp
-    const whatsappMessage = `Quiero más información sobre ${selectedProduct.name}`;
+    const whatsappMessage = `Hola, estoy interesado en ${selectedProduct.name}. Me gustaría saber más detalles sobre el producto y cómo puedo adquirirlo. Quedo atento a su respuesta.`;
     const whatsappUrl = `https://wa.me/50683167432?text=${encodeURIComponent(
       whatsappMessage
     )}`;
