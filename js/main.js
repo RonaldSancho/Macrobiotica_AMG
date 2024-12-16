@@ -289,7 +289,6 @@ jQuery(document).ready(function ($) {
       }" class="img-fluid">
                     </a>
                     <h3 class="text-dark">${product.name}</h3>
-                    <p class="price">${product.price}</p>
                 </div>
             `;
       popularProductsContainer.append(productHTML);
@@ -327,7 +326,6 @@ jQuery(document).ready(function ($) {
             )}'>
               <img src="${product.img}" alt="${product.name}" class="img-fluid">
               <h3 class="text-dark">${product.name}</h3>
-              <p class="price">${product.price}</p>
             </a>
           </div>
         `;
@@ -422,7 +420,6 @@ jQuery(document).ready(function ($) {
   if (selectedProduct) {
     $(".product-title").text(selectedProduct.name);
     $(".product-img").attr("src", selectedProduct.img);
-    $(".price").text(selectedProduct.price);
 
     if (selectedProduct.description) {
       const descriptionHtml = selectedProduct.description
