@@ -12,6 +12,7 @@ jQuery(document).ready(function ($) {
       img: "images/CITRATO_POTASIO.png",
       name: "Citrato Potasio y Vitamina B12",
       price: "3,663.00",
+      registry: "SD-CR-19-09035",
       description: [
         "Coadyuvante en la función renal, ácido úrico y gota.",
         "Fortalece la función del páncreas.",
@@ -22,6 +23,7 @@ jQuery(document).ready(function ($) {
       img: "images/BIOTINA.png",
       name: "Biotina, Ácido Hialurónico + Vitamina E y C",
       price: "5,235.00",
+      registry: "SD-CR-23-01389",
       description: [
         "Esta fórmula de BIOTINA con ÁCIDO HIALURÓNICO está entre los factores que influyen de manera decisiva en la salud del cabello.",
         "Contribuye al fortalecimiento de las uñas y la piel.",
@@ -32,6 +34,7 @@ jQuery(document).ready(function ($) {
       img: "images/CITRATO_MAGNESIO.png",
       name: "Citrato de Magnesio Polvo",
       price: "6,892.00",
+      registry: "SD-CR-19-09087",
       description: [
         "Mejora la hidratación y el movimiento peristáltico del intestino.",
         "Coadyuvante en presión alta y problemas de migraña.",
@@ -42,6 +45,7 @@ jQuery(document).ready(function ($) {
       img: "images/GEL_SABILA.png",
       name: "Gel de Sábila Natural",
       price: "4,201.00",
+      registry: "C-CR-17-04342",
       description: [
         "Excelente hidratante de la piel.",
         "Mejora la cicatrización de las heridas, especialmente en quemaduras.",
@@ -55,6 +59,7 @@ jQuery(document).ready(function ($) {
       img: "images/CITRATO_MAGNESIO_CAPS.png",
       name: "Citrato de Magnesio Cápsulas",
       price: "4,949.00",
+      registry: "SD-CR-19-08806",
       description: [
         "Mejora la hidratación y el movimiento peristáltico del intestino.",
         "Coadyuvante en presión alta y problemas de migraña.",
@@ -65,6 +70,7 @@ jQuery(document).ready(function ($) {
       img: "images/COLAGENO_VC.png",
       name: "Colágeno Hidrolizado con Vitamina C",
       price: "4,959.00",
+      registry: "SD-CR-17-09349",
       description: [
         "El colágeno con vitamina C se necesita para el crecimiento y reparación de tejidos en todas las partes del cuerpo.",
         "Se utiliza para formar una proteína importante llamada colágeno, utilizada para producir la piel, los tendones, los ligamentos y los vasos sanguíneos.",
@@ -75,6 +81,7 @@ jQuery(document).ready(function ($) {
       img: "images/COMPLEJO_B.png",
       name: "Complejo B + Vitamina B12",
       price: "5,087.00",
+      registry: "SD-CR-23-01495",
       description: [
         "Las Vitaminas B son un grupo de vitaminas esenciales solubles en agua.",
         "Entre sus muchas funciones, las vitaminas del grupo B son importantes para mantener las células de la sangre, el sistema inmunológico y el sistema nervioso.",
@@ -86,6 +93,7 @@ jQuery(document).ready(function ($) {
       img: "images/EPALI-NAT.png",
       name: "EPALI-NAT: Protector Hepático Natural",
       price: "6,312.00",
+      registry: "SD-CR-23-01512",
       description: [
         "Genera excelentes resultados en el tratamiento de problemas ocasionados por deficiencia hepática como:",
         "Grasa en el hígado.",
@@ -97,6 +105,7 @@ jQuery(document).ready(function ($) {
       img: "images/FIT-ES-NAT.png",
       name: "FIT-ES-NAT Suplemento Natural",
       price: "6,115.00",
+      registry: "SD-CR-23-01567",
       description: [
         "Fórmula especial de fitoestrógenos para tratar los malestares ocasionados por la (pre) y menopausia como:",
         "Calores.",
@@ -110,6 +119,7 @@ jQuery(document).ready(function ($) {
       img: "images/OMEGA_369.png",
       name: "Omega 3, 6 y 9 Natural",
       price: "4,368.00",
+      registry: "SD-CR-16-07953",
       description: [
         "El EPA y DHA ayudan a proteger al corazón.",
         "Contribuyen con una buena circulación sanguínea.",
@@ -120,6 +130,7 @@ jQuery(document).ready(function ($) {
       img: "images/HART-HAID.png",
       name: "Hart-Haid Glucosamina + Colágeno",
       price: "7,935.00",
+      registry: "SD-CR-23-01034",
       description: [
         "Promueve la regeneración del cartílago y de las articulaciones de los huesos.",
         "Reduce las inflamaciones musculares, la artritis y la osteoporosis.",
@@ -130,6 +141,7 @@ jQuery(document).ready(function ($) {
       img: "images/JARABE.png",
       name: "Jarabe con Vitamina C + Bambú",
       price: "4,779.00",
+      registry: "SD-CR-18-08517",
       description: [
         "Fortalece el sistema inmunológico.",
         "Produce colágeno.",
@@ -142,6 +154,7 @@ jQuery(document).ready(function ($) {
       img: "images/JUGO_CONCENTRADO.png",
       name: "Jugo Concentrado Nutritivo",
       price: "6,326.00",
+      registry: "A-CR-16-07456",
       description: [
         "Coadyuvante a proteger y reparar las mucosas gastrointestinales.",
         "Posee una acción antiinflamatoria que ayuda en el control de la gastritis, colitis ulcerosa y diarrea infecciosa.",
@@ -154,6 +167,7 @@ jQuery(document).ready(function ($) {
       img: "images/MELATONINA.png",
       name: "Melatonina + Vitamina B6",
       price: "4,031.00",
+      registry: "SD-CR-23-00638",
       description: [
         "Coadyuvante en el tratamiento del insomnio.",
         "Regula el ciclo circadiano.",
@@ -164,6 +178,7 @@ jQuery(document).ready(function ($) {
       img: "images/MORINGA.png",
       name: "Suplemento de Moringa Natural",
       price: "4,850.00",
+      registry: "SD-CR-17-08919",
       description: [
         "Coadyuvante para el control de la glucosa, de las grasas en la sangre, como antiinflamatoria, antimicrobiana, anticancerígena y protectora hepática.",
         "Posee:",
@@ -177,6 +192,7 @@ jQuery(document).ready(function ($) {
       img: "images/OMEGA_3.png",
       name: "Omega 3: 100 Softgels",
       price: "4,368.00",
+      registry: "SD-CR-16-02381",
       description: [
         "El EPA y DHA ayudan a proteger al corazón.",
         "Contribuyen con una buena circulación sanguínea.",
@@ -187,6 +203,7 @@ jQuery(document).ready(function ($) {
       img: "images/ALGAS_SPIRULINA.png",
       name: "Spirulina: Alga Nutritiva",
       price: "4,639.00",
+      registry: "SD-CR-20-02537",
       description: [
         "Es empleada en programas dietéticos para bajar de peso o en casos de desnutrición.",
         "Coadyuvante en estreñimiento, gastritis, colesterol alto y úlceras del tracto gastrointestinal.",
@@ -197,6 +214,7 @@ jQuery(document).ready(function ($) {
       img: "images/VITAMINA_D3.png",
       name: "Vitamina D3 Suplemento Diario",
       price: "4,378.00",
+      registry: "SD-CR-23-01473",
       description: [
         "Es un nutriente necesario para la absorción del calcio requerido por los huesos.",
         "Colabora en el tratamiento de la Osteoporosis.",
@@ -209,6 +227,7 @@ jQuery(document).ready(function ($) {
       img: "images/SUP-CO-CLE.png",
       name: "SUP-CO-CLE Limpiador de Colon",
       price: "6,515.00",
+      registry: "SD-CR-23-01565",
       description: [
         "Fórmula mejorada para la limpieza y restablecimiento de las funciones del colon.",
         "Mejora la digestión.",
@@ -219,6 +238,7 @@ jQuery(document).ready(function ($) {
       img: "images/TE_CHINO.png",
       name: "Té Chino de Bambú",
       price: "2,451.00",
+      registry: "AS-CN-19-03860",
       description: [
         "Posee un excelente aporte en fibra que regula el tránsito intestinal y combate el estreñimiento.",
         "Su alto contenido en potasio ayuda al buen funcionamiento del sistema nervioso y regula la presión arterial.",
@@ -230,6 +250,7 @@ jQuery(document).ready(function ($) {
       img: "images/GINGER_DRINK.png",
       name: "Té de Jengibre Saludable",
       price: "2,801.00",
+      registry: "AS-CN-19-03859",
       description: [
         "El Jengibre tiene propiedades antioxidantes y antiinflamatorias gracias a la presencia de Fitoesteroles.",
         "Es bueno para personas con reumatismo y artritis.",
@@ -241,6 +262,7 @@ jQuery(document).ready(function ($) {
       img: "images/URI-GO-NAT.png",
       name: "URI-GO-NAT: Uricemia Natural",
       price: "5,878.00",
+      registry: "SD-CR-23-01573",
       description: [
         "Fórmula especial de hierbas naturales.",
         "Coadyuvante en el tratamiento del ácido úrico, nivelándolo y previniendo nuevas formaciones.",
@@ -252,6 +274,7 @@ jQuery(document).ready(function ($) {
       img: "images/VITAGOMITAS.png",
       name: "Vitagomitas: Vitaminas Naturales",
       price: "4,368.00",
+      registry: "SD-US-21-00293",
       description: [
         "Fortalece el sistema inmune.",
         "Coadyuvante en el fortalecimiento de los huesos.",
@@ -289,6 +312,7 @@ jQuery(document).ready(function ($) {
       }" class="img-fluid">
                     </a>
                     <h3 class="text-dark">${product.name}</h3>
+                    <p class="price">${product.registry}</p>
                 </div>
             `;
       popularProductsContainer.append(productHTML);
@@ -326,6 +350,7 @@ jQuery(document).ready(function ($) {
             )}'>
               <img src="${product.img}" alt="${product.name}" class="img-fluid">
               <h3 class="text-dark">${product.name}</h3>
+              <p class="price">${product.registry}</p>
             </a>
           </div>
         `;
@@ -420,6 +445,7 @@ jQuery(document).ready(function ($) {
   if (selectedProduct) {
     $(".product-title").text(selectedProduct.name);
     $(".product-img").attr("src", selectedProduct.img);
+    $(".price").text(selectedProduct.registry);
 
     if (selectedProduct.description) {
       const descriptionHtml = selectedProduct.description

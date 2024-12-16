@@ -1546,7 +1546,6 @@ a:hover {
 }
 
 .price::before {
-  content: "₡ ";
   font-size: 1.3rem; /* Tamaño ligeramente menor para el símbolo */
 }
 
