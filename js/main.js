@@ -359,44 +359,59 @@ jQuery(document).ready(function ($) {
   function renderPagination() {
     const paginationContainer = $(".site-block-27 ul");
     paginationContainer.html(""); // Limpia la paginación actual
-
+  
     const totalPages = Math.ceil(products.length / itemsPerPage);
-
+  
+    // Botón "Anterior"
     if (currentPage > 1) {
       const prevPage = $('<li><a href="javascript:void(0)">&lt;</a></li>');
       prevPage.on("click", () => {
         currentPage--;
-        localStorage.setItem("currentPage", currentPage); // Guarda la página actual
+        localStorage.setItem("currentPage", currentPage);
         renderProducts();
-        window.scrollTo(0, 0); // Desplaza hacia arriba
+        renderPagination(); // Vuelve a renderizar la paginación
+        window.scrollTo(0, 0);
       });
       paginationContainer.append(prevPage);
     }
-
+  
+    // Números de página
     for (let i = 1; i <= totalPages; i++) {
-      const pageItem = $("<li></li>");
-      if (i === currentPage) pageItem.addClass("active");
-      pageItem.html(`<a href="javascript:void(0)">${i}</a>`);
-      pageItem.on("click", () => {
+      const pageItem = $('<li class="page-item"></li>');
+      const pageLink = $(`<a href="javascript:void(0)">${i}</a>`);
+  
+      // Agrega clase "active" a la página actual
+      if (i === currentPage) {
+        pageItem.addClass("active");
+      }
+  
+      // Evento de cambio de página
+      pageLink.on("click", () => {
         currentPage = i;
-        localStorage.setItem("currentPage", currentPage); // Guarda la página actual
+        localStorage.setItem("currentPage", currentPage);
         renderProducts();
-        window.scrollTo(0, 0); // Desplaza hacia arriba
+        renderPagination(); // Actualiza la paginación
+        window.scrollTo(0, 0);
       });
+  
+      pageItem.append(pageLink);
       paginationContainer.append(pageItem);
     }
-
+  
+    // Botón "Siguiente"
     if (currentPage < totalPages) {
       const nextPage = $('<li><a href="javascript:void(0)">&gt;</a></li>');
       nextPage.on("click", () => {
         currentPage++;
-        localStorage.setItem("currentPage", currentPage); // Guarda la página actual
+        localStorage.setItem("currentPage", currentPage);
         renderProducts();
-        window.scrollTo(0, 0); // Desplaza hacia arriba
+        renderPagination(); // Actualiza la paginación
+        window.scrollTo(0, 0);
       });
       paginationContainer.append(nextPage);
     }
   }
+  
 
   // Evento para los botones de filtro
   $("#dropdownMenuReference")

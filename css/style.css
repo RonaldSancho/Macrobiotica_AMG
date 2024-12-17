@@ -1017,8 +1017,9 @@ a:hover {
 }
 
 .pagination-container {
-  display: inline-block;
-  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
 }
 
 .pagination {
@@ -1026,7 +1027,17 @@ a:hover {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 10px;
+  gap: 8px;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.pagination a:hover {
+  background-color: #343a40; /* Verde */
+  color: #fff;
+  border-color: #4e791d;
 }
 
 .page-item {
@@ -1046,10 +1057,6 @@ a:hover {
   border: 1px solid #ddd;
   border-radius: 50%; /* Botones redondos */
   transition: all 0.3s ease;
-}
-
-.pagination-container .pagination .page-item:not(.active) a {
-  background-color: #f9f9f9;
 }
 
 .site-block-27 ul li {
