@@ -1613,12 +1613,12 @@ a:hover {
     font-size: 1.2rem; /* Reducir el tamaño de la fuente */
   }
 
-  #registry {
-    font-size: 1.2rem; /* Reducir el tamaño del precio */
+  #product-registry {
+    font-size: 1rem; /* Reducir el tamaño del precio */
   }
 
-  .registry {
-    font-size: 1.2rem; /* Reducir el tamaño del precio */
+  .product-registry {
+    font-size: 1rem; /* Reducir el tamaño del precio */
   }
 }
 
@@ -1753,11 +1753,11 @@ a:hover {
     font-size: 1.8rem; /* Ajuste del tamaño del título */
   }
 
-  #registry {
+  #product-registry {
     font-size: 1.6rem; /* Reduce el tamaño del precio */
   }
 
-  .registry {
+  .product-registry {
     font-size: 1.6rem; /* Reduce el tamaño del precio */
   }
 
@@ -1791,13 +1791,13 @@ a:hover {
     text-align: center; /* Centra el texto en pantallas pequeñas */
   }
 
-  #registry {
-    font-size: 1.4rem; /* Reduce el tamaño del precio */
+  #product-registry {
+    font-size: 1rem; /* Reduce el tamaño del precio */
     text-align: center; /* Centra el precio */
   }
 
-  .registry {
-    font-size: 1.4rem; /* Reduce el tamaño del precio */
+  .product-registry {
+    font-size: 1rem; /* Reduce el tamaño del precio */
     text-align: center; /* Centra el precio */
   }
 
