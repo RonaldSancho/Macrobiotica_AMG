@@ -1410,7 +1410,7 @@ a:hover {
 }
 
 .banner-1 .banner-1-inner p {
-  color: rgba(0, 0, 0, 0.5);
+  color: black;
   font-size: 1.2rem;
 }
 
@@ -1433,6 +1433,13 @@ a:hover {
 .bg-image>.container {
   position: relative;
   z-index: 2;
+}
+
+@media (max-width: 991.98px) {
+  .banner-1-inner.ml-auto {
+    margin-right: 10px; /* Asegura que el párrafo esté alineado a la derecha */
+    text-align: right; /* Confirma que el texto esté a la derecha */
+  }
 }
 
 .section-overlap {
