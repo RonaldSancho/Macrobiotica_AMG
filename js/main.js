@@ -303,28 +303,22 @@ jQuery(document).ready(function ($) {
     // Renderiza los productos en el contenedor
     popularProducts.forEach((product) => {
       const productHTML = `
-                <div class="col-sm-6 col-lg-4 text-center item mb-4">
-                    <a href="product.html" class="product-link" data-product='${JSON.stringify(
-                      product
-                    )}'>
-                        <img src="${product.img}" alt="${
-        product.name
-      }" class="img-fluid">
-                    </a>
-                    <h3 class="text-dark">${product.name}</h3>
-                    <p class="price">${product.registry}</p>
-                </div>
-            `;
+      <div class="col-sm-6 col-lg-4 text-center item mb-4">
+        <a href="product.html" class="product-link" data-product='${JSON.stringify(product)}'>
+          <img src="${product.img}" alt="${product.name}" class="img-fluid">
+        </a>
+        <h3 class="text-dark">${product.name}</h3>
+        <p class="product-registry">${product.registry}</p>
+      </div>
+    `;    
       popularProductsContainer.append(productHTML);
     });
-
     // Evento para guardar el producto seleccionado en Local Storage
     $(".product-link").on("click", function () {
       const product = $(this).data("product");
       localStorage.setItem("selectedProduct", JSON.stringify(product));
     });
   }
-
   // Llama a la función para renderizar productos populares al cargar la página
   renderPopularProducts();
 
@@ -344,16 +338,14 @@ jQuery(document).ready(function ($) {
 
     paginatedProducts.forEach((product) => {
       const productElement = `
-          <div class="col-sm-6 col-lg-4 text-center item mb-4">
-            <a href="product.html" class="product-link" data-product='${JSON.stringify(
-              product
-            )}'>
-              <img src="${product.img}" alt="${product.name}" class="img-fluid">
-              <h3 class="text-dark">${product.name}</h3>
-              <p class="price">${product.registry}</p>
-            </a>
-          </div>
-        `;
+      <div class="col-sm-6 col-lg-4 text-center item mb-4">
+        <a href="product.html" class="product-link" data-product='${JSON.stringify(product)}'>
+          <img src="${product.img}" alt="${product.name}" class="img-fluid">
+          <h3 class="text-dark">${product.name}</h3>
+          <p class="product-registry">${product.registry}</p>
+        </a>
+      </div>
+    `;    
       productContainer.append(productElement);
     });
 
@@ -445,7 +437,7 @@ jQuery(document).ready(function ($) {
   if (selectedProduct) {
     $(".product-title").text(selectedProduct.name);
     $(".product-img").attr("src", selectedProduct.img);
-    $(".price").text(selectedProduct.registry);
+    $("#product-registry").text(selectedProduct.registry);
 
     if (selectedProduct.description) {
       const descriptionHtml = selectedProduct.description

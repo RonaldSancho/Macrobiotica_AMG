@@ -1532,20 +1532,36 @@ a:hover {
   color: #d3b456; /* Dorado en hover */
 }
 
-/* Precio */
-.price {
+/* Estilo del registro en la página de detalles */
+#product-registry {
   font-size: 1.4rem;
   color: #4e791d;
   font-weight: 500;
-  margin-top: auto; /* Coloca el precio al final de la card */
+  margin-top: auto;
 }
 
-.price sup {
+.product-registry {
+  font-size: 1.4rem;
+  color: #4e791d;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+#product-registry sup {
   font-size: 0.8rem; /* Tamaño más pequeño para los decimales */
   vertical-align: super;
 }
 
-.price::before {
+#product-registry::before {
+  font-size: 1.3rem; /* Tamaño ligeramente menor para el símbolo */
+}
+
+.product-registry sup {
+  font-size: 0.8rem; /* Tamaño más pequeño para los decimales */
+  vertical-align: super;
+}
+
+.product-registry::before {
   font-size: 1.3rem; /* Tamaño ligeramente menor para el símbolo */
 }
 
@@ -1597,7 +1613,11 @@ a:hover {
     font-size: 1.2rem; /* Reducir el tamaño de la fuente */
   }
 
-  .price {
+  #registry {
+    font-size: 1.2rem; /* Reducir el tamaño del precio */
+  }
+
+  .registry {
     font-size: 1.2rem; /* Reducir el tamaño del precio */
   }
 }
@@ -1733,7 +1753,11 @@ a:hover {
     font-size: 1.8rem; /* Ajuste del tamaño del título */
   }
 
-  .price {
+  #registry {
+    font-size: 1.6rem; /* Reduce el tamaño del precio */
+  }
+
+  .registry {
     font-size: 1.6rem; /* Reduce el tamaño del precio */
   }
 
@@ -1767,7 +1791,12 @@ a:hover {
     text-align: center; /* Centra el texto en pantallas pequeñas */
   }
 
-  .price {
+  #registry {
+    font-size: 1.4rem; /* Reduce el tamaño del precio */
+    text-align: center; /* Centra el precio */
+  }
+
+  .registry {
     font-size: 1.4rem; /* Reduce el tamaño del precio */
     text-align: center; /* Centra el precio */
   }
@@ -1801,7 +1830,11 @@ a:hover {
     font-size: 1.3rem; /* Tamaño pequeño del título */
   }
 
-  .price {
+  #registry {
+    font-size: 1.2rem; /* Precio más pequeño */
+  }
+
+  .registry {
     font-size: 1.2rem; /* Precio más pequeño */
   }
 
